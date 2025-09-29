@@ -1,32 +1,655 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Matthew's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    <title>Matthew Short</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- Your template CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Font Awesome CSS for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+/* Avatar container */
+.avatar-container {
+    width: 120px;             /* Slightly smaller for balance */
+    height: 120px;            /* Equal to width for perfect circle */
+    margin: 0 auto 10px;      /* Center horizontally by default */
+    border-radius: 50%;       /* Circle */
+    overflow: hidden;
+    display: inline-block;    /* So we can adjust margin-left */
+    margin-left: 20px;        /* Move image slightly to the right above name */
+}
+
+/* Image fills container */
+.avatar-container img.pfp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;  /* Centered inside circle */
+    display: block;
+}
+
+/* Center social icons */
+.social-icons ul.icons {
+    display: flex;
+    justify-content: center;  /* Center icons horizontally */
+    gap: 15px;                /* Space between icons */
+    padding: 0;
+    margin: 10px 0 0 0;
+    list-style: none;
+}
+
+ .footer-icons {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        gap: 15px;               /* Space between icons */
+        padding: 0;
+        margin: 0 0 20px 0;      /* Optional bottom spacing */
+        list-style: none;
+    }
+
+	/* Center footer copyright/design text */
+footer .copyright {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+</style>
+
+
+
 </head>
-<body>
-  <header>
-    <h1>Hi, I'm Matthew</h1>
-    <p>Computer Science Student | Aspiring Data Scientist</p>
-  </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Task Manager App</strong><br />
-        A Python CLI tool to assign and track tasks for multiple users.
-        <br /><a href="https://github.com/your-username/task-manager">View on GitHub</a>
-      </li>
+
+	<body class="is-preload">
+
+<!-- Header -->
+<header id="header">
+    <div class="inner" style="text-align: center;">
+        <!-- Avatar image above name, shifted right -->
+        <div class="avatar-container">
+            <img src="images/Web_pfp.jpg" alt="Matthew Short" class="pfp" />
+        </div>
+        <h1><strong>Matthew Short</strong><br />
+        Athlete | BSc Computer Science |<br />
+        Data Science Specialist</h1>
+    </div>
+</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2><br />
+							About me</h2>
+						</header>
+						<p>I’m a computer science student with a passion for turning ideas into reality through coding, data, and technology. Whether I’m building a project, analyzing data, or experimenting with new tools, I love finding creative solutions to complex problems. Off the screen, you’ll often find me on the football field, where teamwork, strategy, and perseverance shape not only my game but the way I approach every challenge. I’m always learning, exploring, and looking for ways to make an impact. One project, one line of code, and one goal at a time.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</section>
+
+				
+					<!-- Two -->
+<!-- Two -->
+<section id="two">
+    <h2>Recent</h2>
+    <div class="row">
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+            <h3>Durban Coast</h3>
+            <p>A home away from home.</p>
+        </article>
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+            <h3>Data Science</h3>
+            <p>Working with K-means Clustering.</p>
+        </article>
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+            <h3>Joshua 1:9</h3>
+            <p>"Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go."</p>
+        </article>
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+            <h3>Football Journey</h3>
+            <p>Bayhill Tournement 2024.</p>
+        </article>
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+            <h3>Niagara Falls</h3>
+            <p>New York State, United States of America</p>
+        </article>
+        <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+            <h3>Loftus Versfeld Stadium</h3>
+            <p>Pretoria, South Africa</p>
+        </article>
+    </div>
+
+    <!-- Full Portfolio Button -->
+    <ul class="actions" style="margin-top:20px;">
+        <li>
+            <a href="docs/portfolio.pdf" download class="button">
+                <i class="fas fa-download"></i> Full Portfolio
+            </a>
+        </li>
     </ul>
-  </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/your-username">your-username</a></p>
-  </section>
-</body>
+   <!-- Request CV Form (subtle) -->
+<section id="request-cv" style="margin-top:20px; color:#444;">
+    <h3 style="font-weight:normal; font-size:1.2em;">Request My CV</h3>
+    <form id="request-cv-form" action="https://formspree.io/f/manpqllo" method="POST">
+        <div class="row gtr-uniform gtr-50">
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="col-12">
+                <select name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="Recruiter">Recruiter</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <textarea name="message" placeholder="Reason for requesting CV" rows="4"></textarea>
+            </div>
+            <div class="col-12">
+                <ul class="actions">
+                    <li>
+                        <button type="submit" class="button" style="font-family:inherit;">
+                            Request CV
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p id="cv-response" style="margin-top:10px; color: #d9c8a9;"></p>
+    </form>
+</section>
+</section>
+
+
+
+
+
+
+				<!-- Three -->
+					<section id="three">
+    <h2>Get In Touch</h2>
+    <p>Let's Connect. For questions, collaborations, or discussions, do not hesitate to get in touch.</p>
+    <div class="row">
+        <div class="col-8 col-12-small">
+            <form id="contact-form" method="POST" action="https://formspree.io/f/manpqllo">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="row gtr-uniform gtr-50">
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="name" id="name" placeholder="Name" required />
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+            <!-- Confirmation message -->
+            <div id="form-confirmation" style="display:none; margin-top:20px; color:rgb(205, 191, 123); font-weight:bold;">
+                Thank you! Your message has been sent.
+            </div>
+        </div>
+        <div class="col-4 col-12-small">
+            <ul class="labeled-icons">
+                <li>
+                    <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+                    Johannesburg,<br />South Africa
+                </li>
+                <li>
+                    <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+                    +27 74 204 7867
+                </li>
+                <li>
+                    <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+                    <a href="mailto:mshort.za@gmail.com">mshort.za@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-xsmall">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+    								 <li><a href="https://www.facebook.com/yourprofile" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+    								 <li><a href="https://github.com/yourusername" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+   	 								 <li><a href="https://www.linkedin.com/in/yourprofile" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+   									 <li><a href="https://www.instagram.com/yourprofile" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+   									 <li><a href="https://www.youtube.com/yourchannel" class="icon brands fa-youtube" target="_blank"><span class="label">YouTube</span></a></li>
+   									 <li><a href="mailto:mshort.za@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+									</ul>
+
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button large">Large</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Primary</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+	<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <ul class="icons footer-icons">
+            <li><a href="https://www.facebook.com/matthew.short.5203577" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+            <li><a href="https://github.com/matthew-srt" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/matthew-short-790a37211/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://www.instagram.com/matthew_srt/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+            <li><a href="https://www.youtube.com/@matthewsytc" class="icon brands fa-youtube" target="_blank"><span class="label">YouTube</span></a></li>
+            <li><a href="mailto:mshort.za@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Matthew Short</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			 <!-- Your contact form JavaScript -->
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Stop default form submission
+        const form = e.target;
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+            if (response.ok) {
+                document.getElementById('form-confirmation').style.display = 'block';
+                form.reset();
+            } else {
+                response.json().then(data => {
+                    alert("Oops! There was a problem: " + (data.error || "Please try again."));
+                });
+            }
+        })
+        .catch(error => {
+            alert("Oops! There was a problem sending your message.");
+        });
+    });
+    </script>
+
+<!-- Add this script at the end of your body -->
+<script>
+document.getElementById('request-cv-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent page redirect
+
+    var form = e.target;
+    var data = new FormData(form);
+    
+    fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            document.getElementById('cv-response').innerText = 'Thank you! Your request has been sent.';
+            form.reset();
+        } else {
+            response.json().then(data => {
+                if (data.errors) {
+                    document.getElementById('cv-response').innerText = data.errors.map(error => error.message).join(", ");
+                } else {
+                    document.getElementById('cv-response').innerText = 'Oops! There was a problem submitting your request.';
+                }
+            });
+        }
+    }).catch(error => {
+        document.getElementById('cv-response').innerText = 'Oops! There was a problem submitting your request.';
+    });
+});
+</script>
+
+
+	</body>
 </html>
